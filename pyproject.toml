@@ -1,0 +1,30 @@
+[project]
+name = "tarantula-soar-analysis"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "William Henney", email = "whenney@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib>=3.10",
+    "numpy>=2",
+    "pyside6",
+    "scousepy",
+    "wcsfile",
+]
+
+[dependency-groups]
+dev = [
+    "cython>=0.29.36,<3",
+    "extension-helpers>=1.2.0",
+    "oldest-supported-numpy>=0.5",
+    "setuptools>=82.0.1",
+    "setuptools-scm>=10.3.4",
+    "wheel>=0.48.0",
+]
+
+[tool.uv.sources]
+scousepy = { path = "../scousepy", editable = true }
+wcsfile = { git = "https://github.com/will-henney/wcsfile.git" }
