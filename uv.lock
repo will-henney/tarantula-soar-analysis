@@ -1771,6 +1771,7 @@ dependencies = [
     { name = "numpy", version = "2.5.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
     { name = "pyside6" },
     { name = "scousepy" },
+    { name = "tetrabloks" },
     { name = "wcsfile" },
 ]
 
@@ -1793,6 +1794,7 @@ requires-dist = [
     { name = "numpy", specifier = ">=2" },
     { name = "pyside6" },
     { name = "scousepy", editable = "../scousepy" },
+    { name = "tetrabloks", git = "https://github.com/will-henney/tetrabloks.git" },
     { name = "wcsfile", git = "https://github.com/will-henney/wcsfile.git" },
 ]
 
@@ -1804,6 +1806,16 @@ dev = [
     { name = "setuptools", specifier = ">=82.0.1" },
     { name = "setuptools-scm", specifier = ">=10.3.4" },
     { name = "wheel", specifier = ">=0.48.0" },
+]
+
+[[package]]
+name = "tetrabloks"
+version = "0.1.0"
+source = { git = "https://github.com/will-henney/tetrabloks.git#1a83e41292a0a89652ab158272d4b91d8c48ae99" }
+dependencies = [
+    { name = "numpy", version = "2.2.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
+    { name = "numpy", version = "2.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.11.*'" },
+    { name = "numpy", version = "2.5.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
 ]
 
 [[package]]

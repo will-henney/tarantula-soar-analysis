@@ -12,6 +12,7 @@ dependencies = [
     "numpy>=2",
     "pyside6",
     "scousepy",
+    "tetrabloks",
     "wcsfile",
 ]
 
@@ -28,3 +29,4 @@ dev = [
 [tool.uv.sources]
 scousepy = { path = "../scousepy", editable = true }
 wcsfile = { git = "https://github.com/will-henney/wcsfile.git" }
+tetrabloks = { git = "https://github.com/will-henney/tetrabloks.git" }
