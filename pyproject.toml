@@ -1,5 +1,5 @@
 [project]
-name = "tarantula-soar-analysis"
+name = "tarantula-soar"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -11,10 +11,16 @@ dependencies = [
     "matplotlib>=3.10",
     "numpy>=2",
     "pyside6",
+    "regions>=0.10",
     "scousepy",
+    "spectral-cube>=0.6.7",
     "tetrabloks",
     "wcsfile",
 ]
+
+[build-system]
+requires = ["uv_build>=0.9,<0.10"]
+build-backend = "uv_build"
 
 [dependency-groups]
 dev = [
@@ -30,3 +36,4 @@ dev = [
 scousepy = { path = "../scousepy", editable = true }
 wcsfile = { git = "https://github.com/will-henney/wcsfile.git" }
 tetrabloks = { git = "https://github.com/will-henney/tetrabloks.git" }
+

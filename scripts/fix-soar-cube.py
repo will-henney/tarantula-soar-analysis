@@ -1,3 +1,12 @@
+"""
+Apply various preprocessing fixes to SOAR Ha spectral cube:
+
+* WCS astrometric corrections
+* Convert from wavelength to LSRK velocities
+* Subtract continuum from cube
+* Save 2D maps of continuum, summed line, and equivalent width
+"""
+
 from astropy.io import fits
 from astropy.wcs import WCS
 from pathlib import Path
