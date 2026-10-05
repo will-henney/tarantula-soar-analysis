@@ -30,8 +30,8 @@ prefix = "soar-30dor-ha"
 cube_hdu = fits.open(cube_dir / f"{prefix}-cube-lsrk-csub.fits")[0]
 
 # List of resampling factors and minimum good pixels per level
-nlist = [2, 4, 8, 16]
-mingoods = [2, 2, 2, 2]
+nlist = [2, 4, 8, 16, 32]
+mingoods = [2, 2, 2, 2, 2]
 nmax = max(nlist)
 
 nk, nj, ni = cube_hdu.data.shape

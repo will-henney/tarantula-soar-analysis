@@ -13,8 +13,8 @@ from pathlib import Path
 import numpy as np
 import re
 
-# Location of data cube
-PATH = Path("~/Dropbox/tarantula-soar-cubo").expanduser()
+# Location of data cube (assumed to be sibling folder to this project)
+PATH = Path(__file__).resolve().parent.parent.parent / "tarantula-soar-cubo"
 
 # Prefix for all new files
 PREFIX = "soar-30dor-ha"
